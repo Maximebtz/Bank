@@ -20,6 +20,7 @@ class Customer{
         $this->account = []; 
     }
 
+
     //Methods
 
     public function addAccount(BankAccount $account){
@@ -94,7 +95,5 @@ class Customer{
 		return $this;
 	}
 }
-
-
 
 ?>

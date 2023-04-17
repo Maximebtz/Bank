@@ -13,16 +13,12 @@
 
     echo $bankAccountMB1->creditAccount(500);
     echo $bankAccountMB1->debitAccount(24.82);
+    
     echo $bankAccountMB1->getBalance();
+
     echo $bankAccountMB1->makeTransfer($bankAccountMB2, 50);
     echo $bankAccountMB1->makeTransfer($bankAccountLB1, 68);
 
     echo $p1->getInfo();
 
 ?>
-
-<!-- 1/ il faut que j'affiche les 2 comptes et le montant qu'il y a dessus
-
-comment ?
-
-1/ afficher les deux comptes :  -->

@@ -24,7 +24,7 @@ class BankAccount{
 
     public function creditAccount(float $credit){
         $this->balance += $credit;
-        return "The account <strong>'" . $this->name_account . "'</strong>" . " has been <strong>credited</strong> with <strong>" . $credit . $this->currency . ".</strong><br>";
+        return "The account <strong>'" . $this->name_account . "'</strong> has been <strong>credited</strong> with <strong>" . $credit . $this->currency . ".</strong><br>";
     }
 
     public function debitAccount(float $debit){
@@ -87,5 +87,4 @@ class BankAccount{
     }
 
 }  
-    
 ?>
