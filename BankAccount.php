@@ -9,7 +9,7 @@ class BankAccount{
 
 
     //__construct
-    public function __construct(string $name_account, float $balance, string $currency, $customer){
+    public function __construct(string $name_account, float $balance, string $currency, Customer $customer){
 
         $this->name_account = $name_account;
         $this->balance = $balance;
@@ -50,6 +50,7 @@ class BankAccount{
 
     //Getters and Setters
 
+
     public function getAccountName(){
        return $this->name_account;
     }
@@ -86,10 +87,5 @@ class BankAccount{
     }
 
 }  
-
-    $p1 = New Customer("Bertuzzi", "Maxime", "1998-03-30", "Colmar");
-    $p2 = New Customer("Bertuzzi", "Laurine", "1996-05-22", "Colmar");
-    $p1_main_account = new BankAccount("main_account", 0, "$", $p1);
-    $p2_main_account = new BankAccount("main_account", 0, "$", $p2);
     
 ?>

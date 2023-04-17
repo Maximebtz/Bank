@@ -1,5 +1,4 @@
 <?php
-
 class Customer{
 
     private string $name;
@@ -11,7 +10,7 @@ class Customer{
 
     //__construct
 
-    public function __construct(string $name, string $firstname, $dob, string $city){
+    public function __construct(string $name, string $firstname, string $dob, string $city){
 
         $this->name = $name;
         $this->firstname = $firstname;
@@ -32,11 +31,18 @@ class Customer{
 
     //Get Infos
 	public function getInfo(){
-        return $this->name . " <br> "
-        . $this->firstname ." <br> "
-        . $this->dob->format('Y-m-d') ." <br> "
-        . $this->city ." <br> ";
-    }
+		$num_accounts = count($this->account);
+			$info = "Information from the Customer:<br>
+			- ". $this->name . " ". $this->firstname ." <br> 
+			- ". $this->dob->format('Y-m-d') ." <br> 
+			- ". $this->city ." <br> 
+			
+			He has " . $num_accounts . " account(s):<br>";
+			foreach($this->account as $account){
+			$info .= "-- <strong>" . $account->getBalance() . "</strong><br>";
+        }
+        return $info;
+	}
 	
 	//Name
 	public function getName(): string {
