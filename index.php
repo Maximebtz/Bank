@@ -1,6 +1,7 @@
 <?php 
 
     include 'BankAccount.php';
+    include 'Customer.php';
 
     $p1 = New Customer("Bertuzzi", "Maxime", "1998-03-30", "Colmar");
     $p2 = New Customer("Bertuzzi", "Laurine", "1996-05-22", "Colmar");

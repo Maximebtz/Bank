@@ -1,5 +1,4 @@
 <?php
-include 'Customer.php';
 class BankAccount{
     
     private string $name_account;
